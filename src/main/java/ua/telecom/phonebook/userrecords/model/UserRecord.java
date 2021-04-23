@@ -28,7 +28,7 @@ public class UserRecord extends BaseEntity {
 
     @Column(name = "phoneNumber", nullable = false)
     @NotBlank
-    @Pattern(regexp = "^((\\+38)[\\- ]?)?(\\(?\\d{3}\\)?[\\- ]?)?[\\d\\- ]{7,10}$")
+    @Pattern(regexp = "^((\+){0,1}91(\s){0,1}(\-){0,1}(\s){0,1}){0,1}98(\s){0,1}(\-){0,1}(\s){0,1}[1-9]{1}[0-9]{7}$")
     private String phoneNumber;
 
     @Column(name = "email")
