@@ -18,7 +18,7 @@ public class UserRecordTo extends BaseTo {
     private String surName;
 
     @NotBlank(message = "*Phone number should not be empty")
-    @Pattern(regexp = "^(\\+38)?(\\(?\\d{3}\\)?)?[\\d\\- ]{7,10}$", message = "Please provide valid phone number with pattern: +38(099)999-99-99")
+    @Pattern(regexp = "^((\+){0,1}91(\s){0,1}(\-){0,1}(\s){0,1}){0,1}98(\s){0,1}(\-){0,1}(\s){0,1}[1-9]{1}[0-9]{7}$", message = "Please provide valid phone number with pattern: +91 99999-99999")
     private String phone;
 
     @Email(message = "*Provide please valid e-mail")
